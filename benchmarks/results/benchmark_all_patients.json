@@ -1,0 +1,558 @@
+{
+  "n_runs": 3,
+  "patients": [
+    "Patient.1",
+    "Patient.2",
+    "Patient.3",
+    "Patient.4",
+    "Patient.5",
+    "Patient.6"
+  ],
+  "thread_counts": [
+    1,
+    4,
+    8
+  ],
+  "results": [
+    {
+      "patient": "Patient.1",
+      "n_sequences": 300,
+      "benchmarks": [
+        {
+          "tool": "sklearn_silva",
+          "times_s": [
+            48.88338266599749,
+            49.990617677001865,
+            48.22977137599082
+          ],
+          "peak_ram_mb": [
+            1443.51953125,
+            1443.51953125,
+            1443.51953125
+          ],
+          "avg_time_s": 49.03459057299673,
+          "std_time_s": 0.8901083065000491,
+          "avg_peak_ram_mb": 1443.51953125,
+          "model_ram_mb": 0.1875,
+          "n_sequences": 300
+        },
+        {
+          "tool": "fastnb_t1",
+          "threads": 1,
+          "times_s": [
+            15.89105168399692,
+            15.660097793006571,
+            15.71813880398986
+          ],
+          "peak_ram_mb": [
+            3975.3671875,
+            3975.3671875,
+            3975.3671875
+          ],
+          "avg_time_s": 15.756429426997784,
+          "std_time_s": 0.12014388789550133,
+          "avg_peak_ram_mb": 3975.3671875,
+          "model_ram_mb": 2524.56640625,
+          "n_sequences": 300
+        },
+        {
+          "tool": "fastnb_t4",
+          "threads": 4,
+          "times_s": [
+            4.423730591995991,
+            4.502754400004051,
+            4.524524166990886
+          ],
+          "peak_ram_mb": [
+            3985.6171875,
+            3985.6171875,
+            3985.6171875
+          ],
+          "avg_time_s": 4.483669719663642,
+          "std_time_s": 0.05303776916344219,
+          "avg_peak_ram_mb": 3985.6171875,
+          "model_ram_mb": 0.0,
+          "n_sequences": 300
+        },
+        {
+          "tool": "fastnb_t8",
+          "threads": 8,
+          "times_s": [
+            2.557775968001806,
+            2.572688652013312,
+            2.716909990995191
+          ],
+          "peak_ram_mb": [
+            4006.37890625,
+            4006.37890625,
+            4006.37890625
+          ],
+          "avg_time_s": 2.6157915370034366,
+          "std_time_s": 0.08788801590301547,
+          "avg_peak_ram_mb": 4006.37890625,
+          "model_ram_mb": 0.0,
+          "n_sequences": 300
+        }
+      ],
+      "accuracy": {
+        "total_asvs": 300,
+        "genus_match": 299,
+        "genus_match_pct": 99.67,
+        "mismatches": [
+          {
+            "asv_id": "547337fc23861f27e5f6215a0e065e48",
+            "sklearn_genus": "",
+            "fastnb_genus": "Faecalibacterium"
+          }
+        ]
+      }
+    },
+    {
+      "patient": "Patient.2",
+      "n_sequences": 323,
+      "benchmarks": [
+        {
+          "tool": "sklearn_silva",
+          "times_s": [
+            51.39704945900303,
+            48.1173930199875,
+            47.88373212600709
+          ],
+          "peak_ram_mb": [
+            4012.0859375,
+            4012.0859375,
+            4012.0859375
+          ],
+          "avg_time_s": 49.13272486833254,
+          "std_time_s": 1.9644398036794706,
+          "avg_peak_ram_mb": 4012.0859375,
+          "model_ram_mb": 0.0,
+          "n_sequences": 323
+        },
+        {
+          "tool": "fastnb_t1",
+          "threads": 1,
+          "times_s": [
+            19.271692823997,
+            18.868389869006933,
+            18.65591382299317
+          ],
+          "peak_ram_mb": [
+            4008.3203125,
+            4008.3203125,
+            4008.3203125
+          ],
+          "avg_time_s": 18.931998838665702,
+          "std_time_s": 0.31277870817097864,
+          "avg_peak_ram_mb": 4008.3203125,
+          "model_ram_mb": 2489.3828125,
+          "n_sequences": 323
+        },
+        {
+          "tool": "fastnb_t4",
+          "threads": 4,
+          "times_s": [
+            4.9900581749971025,
+            5.1871581949963,
+            5.157340158999432
+          ],
+          "peak_ram_mb": [
+            4008.875,
+            4008.875,
+            4008.875
+          ],
+          "avg_time_s": 5.1115188429976115,
+          "std_time_s": 0.10623934874153287,
+          "avg_peak_ram_mb": 4008.875,
+          "model_ram_mb": 0.0,
+          "n_sequences": 323
+        },
+        {
+          "tool": "fastnb_t8",
+          "threads": 8,
+          "times_s": [
+            3.214155761001166,
+            3.0840579710056772,
+            3.0692190550034866
+          ],
+          "peak_ram_mb": [
+            4009.3125,
+            4009.3125,
+            4009.3125
+          ],
+          "avg_time_s": 3.12247759567011,
+          "std_time_s": 0.07974153783243304,
+          "avg_peak_ram_mb": 4009.3125,
+          "model_ram_mb": 0.0,
+          "n_sequences": 323
+        }
+      ],
+      "accuracy": {
+        "total_asvs": 323,
+        "genus_match": 323,
+        "genus_match_pct": 100.0,
+        "mismatches": []
+      }
+    },
+    {
+      "patient": "Patient.3",
+      "n_sequences": 323,
+      "benchmarks": [
+        {
+          "tool": "sklearn_silva",
+          "times_s": [
+            51.522375711007044,
+            49.89493260499148,
+            48.87923834999674
+          ],
+          "peak_ram_mb": [
+            4016.84375,
+            4016.84375,
+            4016.84375
+          ],
+          "avg_time_s": 50.09884888866509,
+          "std_time_s": 1.3333154785543326,
+          "avg_peak_ram_mb": 4016.84375,
+          "model_ram_mb": 0.0,
+          "n_sequences": 323
+        },
+        {
+          "tool": "fastnb_t1",
+          "threads": 1,
+          "times_s": [
+            18.35713969299104,
+            18.257477639999706,
+            18.037405618000776
+          ],
+          "peak_ram_mb": [
+            4012.73828125,
+            4012.73828125,
+            4012.73828125
+          ],
+          "avg_time_s": 18.217340983663842,
+          "std_time_s": 0.16360220983787976,
+          "avg_peak_ram_mb": 4012.73828125,
+          "model_ram_mb": 2489.50390625,
+          "n_sequences": 323
+        },
+        {
+          "tool": "fastnb_t4",
+          "threads": 4,
+          "times_s": [
+            5.380551530994126,
+            5.656993404001696,
+            5.634818535007071
+          ],
+          "peak_ram_mb": [
+            4012.54296875,
+            4012.54296875,
+            4012.54296875
+          ],
+          "avg_time_s": 5.557454490000964,
+          "std_time_s": 0.15360313760715824,
+          "avg_peak_ram_mb": 4012.54296875,
+          "model_ram_mb": 0.0,
+          "n_sequences": 323
+        },
+        {
+          "tool": "fastnb_t8",
+          "threads": 8,
+          "times_s": [
+            3.2217380099900765,
+            2.9170252439944306,
+            2.9486690210032975
+          ],
+          "peak_ram_mb": [
+            4012.4453125,
+            4012.4453125,
+            4012.4453125
+          ],
+          "avg_time_s": 3.0291440916626016,
+          "std_time_s": 0.16753998086544686,
+          "avg_peak_ram_mb": 4012.4453125,
+          "model_ram_mb": 0.0,
+          "n_sequences": 323
+        }
+      ],
+      "accuracy": {
+        "total_asvs": 323,
+        "genus_match": 322,
+        "genus_match_pct": 99.69,
+        "mismatches": [
+          {
+            "asv_id": "edd8710e1fcc457458e01b31340a57a4",
+            "sklearn_genus": "",
+            "fastnb_genus": "Pseudomonas"
+          }
+        ]
+      }
+    },
+    {
+      "patient": "Patient.4",
+      "n_sequences": 320,
+      "benchmarks": [
+        {
+          "tool": "sklearn_silva",
+          "times_s": [
+            49.79697113099974,
+            49.563686962996144,
+            47.64861703598581
+          ],
+          "peak_ram_mb": [
+            4021.89453125,
+            4021.89453125,
+            4021.89453125
+          ],
+          "avg_time_s": 49.003091709993896,
+          "std_time_s": 1.1787945570188512,
+          "avg_peak_ram_mb": 4021.89453125,
+          "model_ram_mb": 0.0,
+          "n_sequences": 320
+        },
+        {
+          "tool": "fastnb_t1",
+          "threads": 1,
+          "times_s": [
+            18.90722821300733,
+            18.42677862898563,
+            18.534362606005743
+          ],
+          "peak_ram_mb": [
+            4017.86328125,
+            4017.86328125,
+            4017.86328125
+          ],
+          "avg_time_s": 18.622789815999568,
+          "std_time_s": 0.25213583501185377,
+          "avg_peak_ram_mb": 4017.86328125,
+          "model_ram_mb": 2489.50390625,
+          "n_sequences": 320
+        },
+        {
+          "tool": "fastnb_t4",
+          "threads": 4,
+          "times_s": [
+            5.133142434002366,
+            5.230716848978773,
+            5.175077091000276
+          ],
+          "peak_ram_mb": [
+            4018.11328125,
+            4018.11328125,
+            4018.11328125
+          ],
+          "avg_time_s": 5.1796454579938045,
+          "std_time_s": 0.04894736047263107,
+          "avg_peak_ram_mb": 4018.11328125,
+          "model_ram_mb": 0.0,
+          "n_sequences": 320
+        },
+        {
+          "tool": "fastnb_t8",
+          "threads": 8,
+          "times_s": [
+            2.873083337006392,
+            2.90982196101686,
+            3.081304696999723
+          ],
+          "peak_ram_mb": [
+            4017.86328125,
+            4017.86328125,
+            4017.86328125
+          ],
+          "avg_time_s": 2.9547366650076583,
+          "std_time_s": 0.11113969437291019,
+          "avg_peak_ram_mb": 4017.86328125,
+          "model_ram_mb": 0.0,
+          "n_sequences": 320
+        }
+      ],
+      "accuracy": {
+        "total_asvs": 320,
+        "genus_match": 320,
+        "genus_match_pct": 100.0,
+        "mismatches": []
+      }
+    },
+    {
+      "patient": "Patient.5",
+      "n_sequences": 268,
+      "benchmarks": [
+        {
+          "tool": "sklearn_silva",
+          "times_s": [
+            50.51935981900897,
+            47.987301768007455,
+            46.29190945101436
+          ],
+          "peak_ram_mb": [
+            4024.2734375,
+            4024.2734375,
+            4024.2734375
+          ],
+          "avg_time_s": 48.26619034601026,
+          "std_time_s": 2.127479326026402,
+          "avg_peak_ram_mb": 4024.2734375,
+          "model_ram_mb": 0.0,
+          "n_sequences": 268
+        },
+        {
+          "tool": "fastnb_t1",
+          "threads": 1,
+          "times_s": [
+            14.312604445003672,
+            14.203349677991355,
+            13.9492012859846
+          ],
+          "peak_ram_mb": [
+            4022.1640625,
+            4022.1640625,
+            4022.1640625
+          ],
+          "avg_time_s": 14.155051802993208,
+          "std_time_s": 0.18645368739518822,
+          "avg_peak_ram_mb": 4022.1640625,
+          "model_ram_mb": 2489.375,
+          "n_sequences": 268
+        },
+        {
+          "tool": "fastnb_t4",
+          "threads": 4,
+          "times_s": [
+            4.022236433025682,
+            4.100161203998141,
+            4.1360910320072435
+          ],
+          "peak_ram_mb": [
+            4022.09375,
+            4022.09375,
+            4022.09375
+          ],
+          "avg_time_s": 4.086162889677023,
+          "std_time_s": 0.05820379738631882,
+          "avg_peak_ram_mb": 4022.09375,
+          "model_ram_mb": 0.0,
+          "n_sequences": 268
+        },
+        {
+          "tool": "fastnb_t8",
+          "threads": 8,
+          "times_s": [
+            2.3019590679905377,
+            2.3191019410151057,
+            2.3458510159980506
+          ],
+          "peak_ram_mb": [
+            4022.03125,
+            4022.03125,
+            4022.03125
+          ],
+          "avg_time_s": 2.3223040083345645,
+          "std_time_s": 0.022120481489160966,
+          "avg_peak_ram_mb": 4022.03125,
+          "model_ram_mb": 0.0,
+          "n_sequences": 268
+        }
+      ],
+      "accuracy": {
+        "total_asvs": 268,
+        "genus_match": 267,
+        "genus_match_pct": 99.63,
+        "mismatches": [
+          {
+            "asv_id": "77d978b37719256f7b1f657188ff3792",
+            "sklearn_genus": "",
+            "fastnb_genus": "Blautia"
+          }
+        ]
+      }
+    },
+    {
+      "patient": "Patient.6",
+      "n_sequences": 459,
+      "benchmarks": [
+        {
+          "tool": "sklearn_silva",
+          "times_s": [
+            52.20856494101463,
+            50.6687347299885,
+            50.32770424900809
+          ],
+          "peak_ram_mb": [
+            4026.75,
+            4026.75,
+            4026.75
+          ],
+          "avg_time_s": 51.06833464000374,
+          "std_time_s": 1.002082482506788,
+          "avg_peak_ram_mb": 4026.75,
+          "model_ram_mb": 0.0,
+          "n_sequences": 459
+        },
+        {
+          "tool": "fastnb_t1",
+          "threads": 1,
+          "times_s": [
+            26.202297857002122,
+            25.211601849994622,
+            25.145739272993524
+          ],
+          "peak_ram_mb": [
+            4029.37109375,
+            4029.37109375,
+            4029.37109375
+          ],
+          "avg_time_s": 25.519879659996757,
+          "std_time_s": 0.5919082838289624,
+          "avg_peak_ram_mb": 4029.37109375,
+          "model_ram_mb": 2489.50390625,
+          "n_sequences": 459
+        },
+        {
+          "tool": "fastnb_t4",
+          "threads": 4,
+          "times_s": [
+            7.2279828889877535,
+            7.214437087997794,
+            7.650831213017227
+          ],
+          "peak_ram_mb": [
+            4029.3828125,
+            4029.3828125,
+            4029.3828125
+          ],
+          "avg_time_s": 7.364417063334258,
+          "std_time_s": 0.24813438100166302,
+          "avg_peak_ram_mb": 4029.3828125,
+          "model_ram_mb": 0.0,
+          "n_sequences": 459
+        },
+        {
+          "tool": "fastnb_t8",
+          "threads": 8,
+          "times_s": [
+            4.075907942984486,
+            4.130154541984666,
+            4.112077428988414
+          ],
+          "peak_ram_mb": [
+            4029.58203125,
+            4029.58203125,
+            4029.58203125
+          ],
+          "avg_time_s": 4.106046637985855,
+          "std_time_s": 0.027621571386490525,
+          "avg_peak_ram_mb": 4029.58203125,
+          "model_ram_mb": 0.0,
+          "n_sequences": 459
+        }
+      ],
+      "accuracy": {
+        "total_asvs": 459,
+        "genus_match": 459,
+        "genus_match_pct": 100.0,
+        "mismatches": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Patient,Total ASVs,Genus match,Match rate (%)
+Patient.1,300,299,99.67
+Patient.2,323,323,100.0
+Patient.3,323,322,99.69
+Patient.4,320,320,100.0
+Patient.5,268,267,99.63
+Patient.6,459,459,100.0

@@ -1,0 +1,8 @@
+build/
+dist/
+__pycache__/
+*.pyc
+*.so
+*.pyd
+*.dll
+.cache/
